@@ -10,11 +10,21 @@ vim.opt.termguicolors = true
 
 -- OR setup with some options
 require("nvim-tree").setup({
+	hijack_cursor = true,
+	-- TODO
+	update_focused_file = {
+		enable = true,
+		update_root = false,
+	},
 	sort = {
 		sorter = "case_sensitive",
 	},
 	view = {
 		width = 30,
+		centralize_selection = true,
+		-- float = {
+		-- 	enable = true,
+		-- },
 	},
 	renderer = {
 		group_empty = true,
