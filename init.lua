@@ -15,7 +15,21 @@ require("vim_opt")
 
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
-require("lazy").setup(require("plugins"))
+local lazy_opts = {
+	install = {
+		-- install missing plugins on startup. This doesn't increase startup time.
+		missing = true,
+		-- try to load one of these colorschemes when starting an installation during startup
+		colorscheme = { "habamax" },
+	},
+	ui = {
+		border = "rounded",
+		title = "lazy.nvim",
+		title_pos = "center",
+	},
+}
+-- require("lazy").setup(require("plugins"), lazy_opts)
+require("lazy").setup("ethanwu")
 
 require("map")
 require("vim_opt")

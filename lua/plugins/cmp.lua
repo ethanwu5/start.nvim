@@ -117,3 +117,6 @@ cmp.setup({
 		}),
 	},
 })
+if true then
+	print("print hello world2")
+end

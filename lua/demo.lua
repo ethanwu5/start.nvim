@@ -8,3 +8,9 @@ end
 if true then
 	print("hello world")
 end
+
+vim.o.shortmess = vim.o.shortmess .. "I"
+
+vim.g.hello2 = "guangkuowuhello"
+
+vim.cmd("set nu!")

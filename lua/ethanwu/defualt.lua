@@ -1,3 +1,4 @@
+print("lazy init")
 local M = {
 	"folke/which-key.nvim",
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
@@ -156,6 +157,5 @@ local M = {
 		},
 	},
 	{ "xiyaowong/transparent.nvim" },
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 }
 return M
