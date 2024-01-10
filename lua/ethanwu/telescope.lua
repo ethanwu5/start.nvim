@@ -13,6 +13,21 @@ return {
 				end,
 			},
 		},
+		opts = function()
+			return {
+				defaults = {
+					layout_config = {
+						vertical = { width = 0.5 },
+						-- other layout configuration here
+					},
+				},
+				pickers = {
+					find_files = {
+						-- theme = "cursor", --dropdown,ivy,cursor
+					},
+				},
+			}
+		end,
 		config = function(_, opts)
 			telescope = require("telescope")
 			telescope.load_extension("harpoon")
