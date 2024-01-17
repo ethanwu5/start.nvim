@@ -14,3 +14,9 @@ vim.o.shortmess = vim.o.shortmess .. "I"
 vim.g.hello2 = "guangkuowuhello"
 
 vim.cmd("set nu!")
+
+function hello()
+	print("this is my lua function")
+end
+
+hello()

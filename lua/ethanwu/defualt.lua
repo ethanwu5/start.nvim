@@ -1,4 +1,3 @@
-print("lazy init")
 local M = {
 	"folke/which-key.nvim",
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
@@ -19,6 +18,26 @@ local M = {
 	{
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+		opts = {
+			theme = "slanted-gaps",
+			section_separators = "",
+			component_separators = "",
+			disabled_filetypes = { "NvimTree" },
+			sections = {
+				lualine_a = {
+					{
+						"filename",
+						path = 1,
+					},
+				},
+				lualine_b = {},
+				lualine_c = {},
+				lualine_x = { "encoding" },
+				lualine_y = { "progress" },
+				lualine_z = { "branch" },
+			},
+		},
+
 		lazy = false,
 		config = function(_, opts)
 			require("lualine").setup(opts)

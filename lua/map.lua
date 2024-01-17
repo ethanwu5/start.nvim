@@ -14,6 +14,8 @@ api.nvim_set_keymap("n", "N", "Nzz", opts)
 api.nvim_set_keymap("n", "*", "*zz", opts)
 api.nvim_set_keymap("n", "{", "{zz", opts)
 api.nvim_set_keymap("n", "}", "{zz", opts)
+-- 退出
+api.nvim_set_keymap("n", "<Leader>qa", "<cmd>qa!<cr>", opts)
 
 -- 清除选中高亮
 api.nvim_set_keymap("n", "<ESC>", "<cmd>nohl<CR>", opts)
@@ -24,6 +26,7 @@ api.nvim_set_keymap("n", "<Leader>fw", "<cmd>Telescope live_grep<CR>", {})
 api.nvim_set_keymap("n", "<Leader>fz", "<cmd>Telescope buffers<cr>", {})
 api.nvim_set_keymap("n", "<Leader>fh", "<cmd>Telescope help_tags<cr>", {})
 api.nvim_set_keymap("n", "<Leader>fo", "<cmd>Telescope harpoon marks<cr>", {})
+api.nvim_set_keymap("n", "<Leader>fj", "<cmd>Telescope  jumplist<cr>", {})
 
 -- source file
 api.nvim_set_keymap("n", "<Leader>so", "<cmd>source  %<cr>", {})
