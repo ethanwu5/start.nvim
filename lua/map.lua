@@ -28,6 +28,9 @@ api.nvim_set_keymap("n", "<Leader>fh", "<cmd>Telescope help_tags<cr>", {})
 api.nvim_set_keymap("n", "<Leader>fo", "<cmd>Telescope harpoon marks<cr>", {})
 api.nvim_set_keymap("n", "<Leader>fj", "<cmd>Telescope  jumplist<cr>", {})
 
+-- lsp
+api.nvim_set_keymap("n", "<Leader>lr", "<cmd>Telescope lsp_references <cr>", {})
+
 -- source file
 api.nvim_set_keymap("n", "<Leader>so", "<cmd>source  %<cr>", {})
 
