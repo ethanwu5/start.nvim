@@ -3,6 +3,9 @@ vim.opt.clipboard = "unnamedplus"
 
 local opt = vim.opt
 
+-- welcome page
+vim.o.shortmess = vim.o.shortmess .. "I"
+
 -- Indenting
 -- opt.expandtab = true
 -- shiftwidth 回车之后的样式
