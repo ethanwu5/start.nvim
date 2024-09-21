@@ -1,8 +1,9 @@
 local M = {
 	"lukas-reineke/indent-blankline.nvim",
+	enabled = false,
 	main = "ibl",
 	opts = {
-		enabled = true,
+		enabled = false,
 		indent = {
 			char = "┆",
 		},
