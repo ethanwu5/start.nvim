@@ -275,6 +275,7 @@ return {
 				},
 			},
 			git_status = {
+				symbols = false,
 				window = {
 					position = "float",
 					mappings = {

@@ -1,12 +1,19 @@
-local M = {
+-- local M = {
+-- 	"lukas-reineke/indent-blankline.nvim",
+-- 	enabled = true,
+-- 	main = "ibl",
+-- 	opts = {},
+-- }
+return {
 	"lukas-reineke/indent-blankline.nvim",
-	enabled = false,
 	main = "ibl",
+	---@module "ibl"
+	---@type ibl.config
 	opts = {
-		enabled = false,
-		indent = {
-			char = "┆",
-		},
+		indent = { char = "╎" },
 	},
+	-- config = function()
+	-- 	require("ibl").setup()
+	-- end,
 }
-return M
+-- return M

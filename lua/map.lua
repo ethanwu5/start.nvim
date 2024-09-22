@@ -16,6 +16,7 @@ api.nvim_set_keymap("n", "{", "{zz", opts)
 api.nvim_set_keymap("n", "}", "{zz", opts)
 -- 退出
 api.nvim_set_keymap("n", "<Leader>qq", "<cmd>qa!<cr>", opts)
+api.nvim_set_keymap("n", "<Leader>q", "<cmd>q<cr>", opts)
 
 -- 清除选中高亮
 api.nvim_set_keymap("n", "<ESC>", "<cmd>nohl<CR>", opts)
@@ -38,3 +39,7 @@ api.nvim_set_keymap("n", "<Leader>so", "<cmd>source  %<cr>", {})
 api.nvim_set_keymap("n", "<Leader>ma", "<cmd>MaximizerToggle!<cr>", {})
 
 api.nvim_set_keymap("n", "<leader>lp", "<cmd>Telescope projects<CR>", opts)
+
+-- buffer
+api.nvim_set_keymap("n", "<Tab>", "<cmd>BufferNext<CR>", {})
+api.nvim_set_keymap("n", "<S-Tab>", "<cmd>BufferPrevious<CR>", {})
