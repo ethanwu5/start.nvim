@@ -32,3 +32,4 @@ require("lazy").setup("ethanwu")
 
 require("map")
 require("vim_opt")
+require("auto_cmd")

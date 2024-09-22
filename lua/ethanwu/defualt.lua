@@ -2,19 +2,19 @@ local M = {
 	"folke/which-key.nvim",
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
 	"folke/neodev.nvim",
-	{
-		"nvim-tree/nvim-tree.lua",
-		lazy = false,
-		keys = {
-			{ "<C-n>", "<cmd>NvimTreeToggle<CR>", desc = "nvim-tree" },
-		},
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-		config = function()
-			require("nvim_tree")
-		end,
-	},
+	-- {
+	-- 	"nvim-tree/nvim-tree.lua",
+	-- 	lazy = false,
+	-- 	keys = {
+	-- 		{ "<C-n>", "<cmd>NvimTreeToggle<CR>", desc = "nvim-tree" },
+	-- 	},
+	-- 	dependencies = {
+	-- 		"nvim-tree/nvim-web-devicons",
+	-- 	},
+	-- 	config = function()
+	-- 		require("nvim_tree")
+	-- 	end,
+	-- },
 	{
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },

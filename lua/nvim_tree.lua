@@ -10,6 +10,7 @@ vim.opt.termguicolors = true
 
 -- OR setup with some options
 require("nvim-tree").setup({
+	enable = false,
 	hijack_cursor = true,
 	-- TODO
 	sync_root_with_cwd = true,

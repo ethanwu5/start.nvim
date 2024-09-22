@@ -15,7 +15,7 @@ api.nvim_set_keymap("n", "*", "*zz", opts)
 api.nvim_set_keymap("n", "{", "{zz", opts)
 api.nvim_set_keymap("n", "}", "{zz", opts)
 -- 退出
-api.nvim_set_keymap("n", "<Leader>qa", "<cmd>qa!<cr>", opts)
+api.nvim_set_keymap("n", "<Leader>qq", "<cmd>qa!<cr>", opts)
 
 -- 清除选中高亮
 api.nvim_set_keymap("n", "<ESC>", "<cmd>nohl<CR>", opts)
