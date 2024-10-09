@@ -43,3 +43,11 @@ api.nvim_set_keymap("n", "<leader>lp", "<cmd>Telescope projects<CR>", opts)
 -- buffer
 api.nvim_set_keymap("n", "<Tab>", "<cmd>BufferNext<CR>", {})
 api.nvim_set_keymap("n", "<S-Tab>", "<cmd>BufferPrevious<CR>", {})
+
+-- neo tree
+vim.keymap.set("n", "<C-n>", "<Cmd>Neotree filesystem toggle<CR>", { desc = "Neo[T]ree [T]oggle" })
+vim.keymap.set("n", "<leader>tr", "<Cmd>Neotree filesystem reveal<CR>", { desc = "Neo[T]ree [R]eveal" })
+vim.keymap.set("n", "<leader>ts", "<Cmd>Neotree filesystem git_status<CR>", { desc = "Neo[T]ree git [S]tatus" })
+
+-- dap
+vim.keymap.set("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "DapToggleBreakPoint" })
